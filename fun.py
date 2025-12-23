@@ -22,6 +22,7 @@
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
 thislist[1:3] = ["blackcurrant", "watermelon"]
 print(len(thislist  ))
-thislist.insert(2, "lemon")
 print(thislist)
-print(len(thislist  ))
+
+thislist.insert(2, "watermelon")
+print(thislist)
