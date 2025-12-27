@@ -34,20 +34,45 @@
 # print(a)
 
 
-list1 = ["apple", "banana", "cherry" , "apple"]
-set1 = {"apple", "banana", "cherry" , "apple"}
-tuple1 = ("apple", "banana", "cherry")
+# list1 = ["apple", "banana", "cherry" , "apple"]
+# set1 = {"apple", "banana", "cherry" , "apple"}
+# tuple1 = ("apple", "banana", "cherry")
 # three different data structures with the same values
-dict1 = {"name": "John", "age": 30, "city": "New York"}
+
 # dictionary with key-value pairs
-print(type(list1))
-print(type(set1))
-print(type(tuple1))
-print(type(dict1))
+# print(type(list1))
+# print(type(set1))
+# print(type(tuple1))
+# print(type(dict1))
 
+# print(list1)
+# print(set1)
+# print(tuple1)
+# num = range(6)
+# print(num)
+# for n in num:
+#   if n  == 3:
+#     continue
+#     print(n)
 
+# def my_function(*kids):
+#   print("The youngest child is " + kids[2])
+#   print("The first child is " + kids[0])
 
-print(list1)
-print(set1)
-print(tuple1)
+# my_function("Emil", "Tobias", "Linus")
 
+def changecase(func):
+  def myinner():
+    return func().upper()
+  return myinner
+
+def changecase(func):
+  def myinner():
+    return func().lower()
+  return myinner
+
+@changecase
+def myfunction():
+  return "Hello Sally"
+
+print(myfunction())
