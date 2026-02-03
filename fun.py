@@ -1,4 +1,4 @@
-#python list  
+#python list
 #Lists are used to store multiple items in a single variable.
 
 
@@ -61,18 +61,41 @@
 
 # my_function("Emil", "Tobias", "Linus")
 
-def changecase(func):
-  def myinner():
-    return func().upper()
-  return myinner
+# def changecase(func):
+#   def myinner():
+#     return func().upper()
+#   return myinner
 
-def changecase(func):
-  def myinner():
-    return func().lower()
-  return myinner
+# def changecase(func):
+#   def myinner():
+#     return func().lower()
+#   return myinner
 
-@changecase
-def myfunction():
-  return "Hello Sally"
+# @changecase
+# def myfunction():
+#   return "Hello Sally"
 
-print(myfunction())
+# print(myfunction())
+print("the day is started")
+x = 'm'
+
+for i in "sachim":
+  if(i == x):
+    print("the value is present")
+
+b =['1','2','3']
+print(type(b))
+# List
+
+e = {'3'}
+print(type(e))
+#set
+c ={'1':"ram"}
+print(type(c))
+# Dist
+
+d = ("eam", "eer")
+print(type(d))
+
+print('Complex number: ', 1 + 1j)
+
